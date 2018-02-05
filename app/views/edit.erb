@@ -1,2 +1,6 @@
 <h1>Edit your Recipe!</h1>
 <p>To edit <%= @recipe.name %> simply fill out the available fields below!</p>
+
+<form method="POST" action="/recipes/<%= @recipe.id %>">
+  <label for="name">New Name: </label><input id="name" type="text" name="name">
+</form>
