@@ -6,7 +6,7 @@
 <h3>With a cook time of approximately: <h3>
   <p><%= @recipe.cook_time %> minutes</p>
 
-<h3>If you no longer wish to keep this recipe delete it here: </h3>
+<h3>If you no longer wish to keep this recipe, delete it here: </h3>
 
   <form method="POST" action="/recipes/<%= @recipe.id %>/delete">
     <input id="hidden" type="hidden" name="_method" value="delete">
