@@ -2,6 +2,7 @@
 <p>The following are available recipes. Simply click one to see a list of the ingredients. Enjoy!</p>
 
 <ol>
-  <% @recipes.each do |recipe| %>
-    <li> <%=
+  <% @recipes.collect do |recipe| %>
+    <li><%= recipe.name %></li>
+  <% end %>
 </ol>
