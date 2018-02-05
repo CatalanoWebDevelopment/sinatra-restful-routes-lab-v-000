@@ -2,5 +2,11 @@
 <p>To edit <%= @recipe.name %> simply fill out the available fields below!</p>
 
 <form method="POST" action="/recipes/<%= @recipe.id %>">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+
+  <label for="name">New Name: </label><input id="name" type="text" name="name">
+
+  <label for="name">New Name: </label><input id="name" type="text" name="name">
+
   <label for="name">New Name: </label><input id="name" type="text" name="name">
 </form>
