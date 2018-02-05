@@ -1,6 +1,10 @@
 <h1>Edit your Recipe!</h1>
 <p>To edit <%= @recipe.name %> simply fill out the available fields below!</p>
 
+<h2>Current Recipe Standards</h2>
+<p>Ingredients: <%= @recipe.ingredients %></p>
+<p>Cook Time: <%= @recipe.cook_time %></p>
+
 <form method="POST" action="/recipes/<%= @recipe.id %>">
   <input id="hidden" type="hidden" name="_method" value="patch">
 
